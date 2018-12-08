@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/donglei520/webpack-multipage/issues"
   },
-  "homepage": "https://github.com/donglei520/webpack-multipage#readme"
+  "homepage": "https://github.com/donglei520/webpack-multipage#readme",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
