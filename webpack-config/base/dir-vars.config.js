@@ -24,7 +24,7 @@ moduleExports.buildDir = path.resolve(moduleExports.rootDir, './build')
 module.exports = moduleExports
 
 
-// console.log(moduleExports.srcRootDir,moduleExports,'打印路径',__dirname)
+console.log(moduleExports.srcRootDir,moduleExports,'打印路径',__dirname)
 
 
 

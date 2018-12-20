@@ -7,4 +7,4 @@ const options = {
 }
 const globInstance = new glob.Glob('!(_)*/!(_)*', options)
 module.exports = globInstance.found
-console.log(globInstance)
+// console.log(globInstance)
