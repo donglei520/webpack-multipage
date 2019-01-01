@@ -12,21 +12,5 @@ module.exports = {
 
     resolve: require('./webpack-config/resolve.config'),
 
-    module: {
-        rules: [
-            {
-                test: /\.(png|jpg|jpeg|gif)$/,
-                use: ['url-loader?limit=1700&name=[name].[ext]']
-            },
-            {
-                test: /\.css$/,
-                use: ['style-loader','css-loader']
-            },
-            {
-                test: /\.(woff|wff2|eot|ttf|otf)$/,
-                use: ['file-loader']
-            },
-            ...require('./webpack-config/inherit/module.config')
-        ]
-    }
+    module: require('./webpack-config/module.prod.config'),
 }
