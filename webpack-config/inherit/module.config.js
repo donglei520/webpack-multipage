@@ -12,14 +12,23 @@ module.exports = {
                 
             },
         // ]
+            // {
+            //     test: /\.js$/,
+            //     // include: dirVars.srcRootDir,
+            //     exclude: /(node_modules)/,
+            //     loader: 'babel-loader',
+                
+            // },
             {
                 test: /\.js$/,
-                // include: dirVars.srcRootDir,
-                exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                
-            },
-           
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+              }, 
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
                 use: ['url-loader?limit=1700&name=[name].[ext]']

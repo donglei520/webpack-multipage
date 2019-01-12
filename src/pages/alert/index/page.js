@@ -11,3 +11,4 @@ let d = {
 }
 let e = Object.assign( c,d,ob)
 console.log(e)
+console.log(e)
